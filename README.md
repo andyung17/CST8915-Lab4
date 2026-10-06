@@ -30,6 +30,7 @@ Each container gets its own writable layer as it records the changes in the file
 
 4. What are the benefits of using Docker Compose over running containers individually?
 
+Benefits for Docker Compose over running each containers individually is able to start all the services with one command. Depending on how many services there are, X seperate docker run commands need to be done instead of one. This also means only one command is needed for a graceful shutdown. Having a Compose file automatically create a network for the services to communicate. This allows services to refer to names instead of **hardcoded** ip addresses.
 
 
 ---
