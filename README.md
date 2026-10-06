@@ -18,7 +18,7 @@
 **Image**: Read-only blueprint for construction <br/>
 **Container**: Running process isolated on the host machine
 
-
+Containers are isolated processes of each apps components, meanwhile an image is a package that includes all the necessary files to run in the container. A container can be started, stopped, restarted and destroyed, meanwhile an image cannot be altered after being made. Images are read-only and if modifications are needed, a new image needs to be created. 
 
 2. Explain how Docker's layered architecture improves efficiency.
 
@@ -26,7 +26,11 @@ A dockers layered architecture is building sheets (`Dockerfile`) or stacks out o
 
 3. Why does each container get its own writable layer?
 
+Each container gets its own writable layer as it allows layers to be reused between images.
+
 4. What are the benefits of using Docker Compose over running containers individually?
+
+
 
 ---
 
@@ -34,3 +38,4 @@ A dockers layered architecture is building sheets (`Dockerfile`) or stacks out o
 
 ## Acknowledgments
 - https://www.geeksforgeeks.org/devops/what-is-docker-layered-file-system/
+- https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-an-image/
